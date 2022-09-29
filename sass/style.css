@@ -1,6 +1,8 @@
 /* variables */
 /* HOME PAGE*/
 .encabezado {
+  background-image: url(../img/header4.jpg);
+  height: 500px;
   width: 100%;
 }
 
@@ -36,7 +38,6 @@
   font-weight: 600;
   font-family: "Montserrat", sans-serif;
   padding-left: 50px;
-  padding-right: 50px;
 }
 
 .encabezado .navBar .navUl li .navLink:hover {
@@ -44,18 +45,20 @@
   color: #c6bdb6;
 }
 
-.encabezado .imgHeader {
-  height: 600px;
-  width: 100%;
+.encabezado h1 {
+  margin: auto;
+  color: #5e5852;
+  font-family: "Quattrocento", serif;
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 190px;
+  font-size: 70px;
 }
 
 .section1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -64,6 +67,7 @@
       -ms-flex-direction: column;
           flex-direction: column;
   width: 100%;
+  margin: auto;
 }
 
 .section1 {
@@ -86,11 +90,15 @@
   margin-top: 96px;
   margin-bottom: 50px;
   font-family: "Quattrocento", serif;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 
 .section1 h1 {
   color: #c6bdb6;
   font-family: "Quattrocento", serif;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 
 .sectionAbout {
@@ -102,7 +110,6 @@
       -ms-flex-direction: row;
           flex-direction: row;
   background-color: #f1f1f1;
-  margin-top: 90px;
   width: 100%;
 }
 
@@ -165,7 +172,6 @@
           flex-direction: row;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  margin-top: 50px;
 }
 
 .sectionGallery {
@@ -183,8 +189,20 @@
   }
 }
 
-.sectionGallery .imgMenu {
-  width: 400px;
+.sectionGallery .container {
+  max-width: 1500px;
+  margin: auto;
+  padding-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding-bottom: 90px;
+}
+
+.sectionGallery .container .imgMenu {
   height: 300px;
 }
 
@@ -200,9 +218,9 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 90px;
+  padding-top: 90px;
   text-align: center;
-  padding-bottom: 50px;
+  padding-bottom: 90px;
 }
 
 .sectionEmail {
@@ -224,7 +242,6 @@
   color: #5e5852;
   text-transform: uppercase;
   font-family: "Quattrocento", serif;
-  margin-top: 50px;
 }
 
 .sectionEmail p {
@@ -242,7 +259,6 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-top: 35px;
 }
 
 .sectionEmail .suscribeForm .form-label {
@@ -273,7 +289,10 @@
 
 /* CARDS PROPIEDADES*/
 .sectionCards {
-  margin-top: 70px;
+  background-color: #f1f1f1;
+}
+
+.sectionCards .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -281,11 +300,10 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-color: #f1f1f1;
   padding-bottom: 80px;
 }
 
-.sectionCards h2 {
+.sectionCards .container h2 {
   font-family: "Quattrocento", serif;
   color: #5e5852;
   margin-top: 90px;
@@ -293,7 +311,7 @@
   margin-bottom: 50px;
 }
 
-.sectionCards .cards {
+.sectionCards .container .cards {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -306,17 +324,28 @@
   margin-bottom: 50px;
 }
 
-.sectionCards a:hover {
+.sectionCards .container a:hover {
   background-color: #fff;
   opacity: .3;
 }
 
 .testimonials {
   background-image: url(../img/Testimonials.jpg);
-  height: 500px;
-  text-align: center;
   width: 100%;
-  padding: 0 100px 0 100px;
+  height: 500px;
+  padding: 0 80px 0 80px;
+}
+
+.testimonials {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.testimonials .container {
+  max-width: 900px;
+  text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -329,35 +358,29 @@
           flex-direction: column;
 }
 
-.testimonials {
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.testimonials h3 {
+.testimonials .container h3 {
   font-family: "Quattrocento", serif;
   color: #fff;
   margin-top: 180px;
-  font-size: 45px;
+  font-size: 35px;
+  padding-left: 20px;
 }
 
-.testimonials p {
+.testimonials .container p {
   font-family: "Montserrat", sans-serif;
   color: #fff;
   font-weight: 700;
   font-size: 20px;
 }
 
-.testimonials .btn:hover {
+.testimonials .container .btn:hover {
   color: #fff;
   border: 2px solid;
   border-radius: 0%;
   background-color: transparent;
 }
 
-.testimonials .btn {
+.testimonials .container .btn {
   background-color: #fff;
   color: #5e5852;
   border: #fff;
@@ -446,6 +469,9 @@ footer .footerLinks a:hover {
   .encabezado {
     width: 100%;
   }
+  .encabezado h1 {
+    font-size: 50px;
+  }
   .encabezado .navBar {
     width: 100%;
     height: 30px;
@@ -456,9 +482,6 @@ footer .footerLinks a:hover {
         -ms-flex-pack: center;
             justify-content: center;
     padding-left: 5px;
-  }
-  .encabezado .imgHeader {
-    height: 200px;
   }
   .section1 {
     margin-top: 0;
@@ -471,15 +494,18 @@ footer .footerLinks a:hover {
   .section1 h1 {
     font-size: 18px;
   }
-  .sectionGallery {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+  .sectionGallery .container {
+    max-width: 500px;
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
   }
-  .sectionGallery .imgMenu {
-    width: 100%;
-    height: 250px;
+  .sectionGallery .container .imgMenu {
+    padding-bottom: 15px;
+    height: 300px;
+    width: 300px;
+    margin: auto;
   }
   .sectionAbout {
     margin-top: 15px;
@@ -504,22 +530,29 @@ footer .footerLinks a:hover {
   .sectionCards {
     width: 100%;
   }
-  .sectionCards .cards {
+  .sectionCards .container .cards {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    margin: auto;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .testimonials h3 {
-    font-size: 25px;
-    width: 500px;
+  .sectionCards .container .cards .card {
+    margin-bottom: 40px;
   }
-  .testimonials p {
+  .testimonials {
+    padding: 0 20px 0 20px;
+    height: 400px;
+  }
+  .testimonials .container h3 {
+    font-size: 25px;
+    margin-top: 100px;
+  }
+  .testimonials .container p {
     font-size: 15px;
-    width: 250px;
   }
   footer {
     width: 100%;
@@ -541,6 +574,7 @@ footer .footerLinks a:hover {
   }
 }
 
+/* END */
 /*PROP PAGE*/
 .navBar2 {
   background-color: #fff;
@@ -671,14 +705,9 @@ footer .footerLinks a:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-align: center;
   margin-top: 40px;
+  max-width: 900px;
+  margin: auto;
 }
 
 .propertyDescription .amenitiesGroup .amenities {
@@ -689,13 +718,22 @@ footer .footerLinks a:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 700px;
 }
 
 .propertyDescription .amenitiesGroup .amenities h6 {
   font-family: "Montserrat", sans-serif;
   color: #c6bdb6;
-  padding-right: 30px;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  text-align: center;
   font-weight: 600;
+  text-transform: uppercase;
+  padding-right: 20px;
 }
 
 .propertyDescription .amenitiesGroup .amenities p {
@@ -703,6 +741,7 @@ footer .footerLinks a:hover {
   color: #c6bdb6;
 }
 
+/* END PROP PAGE */
 /* ABOUT PAGE*/
 .navBar {
   background-color: #fff;
@@ -752,13 +791,13 @@ footer .footerLinks a:hover {
       -ms-flex-direction: row;
           flex-direction: row;
   background-color: #f1f1f1;
-  padding-top: 80px;
 }
 
 .sectionCeline .textAbout {
   padding-top: 100px;
+  margin: auto;
   padding-left: 70px;
-  padding-right: 100px;
+  padding-right: 70px;
   padding-bottom: 100px;
 }
 
@@ -772,6 +811,7 @@ footer .footerLinks a:hover {
   color: #5e5852;
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
+  text-align: justify;
 }
 
 .sectionCeline .textAbout .btn {
@@ -786,6 +826,31 @@ footer .footerLinks a:hover {
   border: #5e5852;
   border: 2px solid #5e5852;
   border-radius: 0%;
+}
+
+.sectionCeline .divImage .imgAbout2 {
+  height: 500px;
+}
+
+/* MOBILE ABOUT PAGE */
+@media (max-width: 768px) {
+  .sectionCeline {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .sectionCeline .divImage {
+    margin: auto;
+    max-width: 400px;
+  }
+  .sectionCeline .divImage .imgAbout2 {
+    height: 300px;
+    width: 100%;
+  }
+  .sectionCeline .textAbout {
+    margin: auto;
+  }
 }
 
 /* CONTACT PAGE */
