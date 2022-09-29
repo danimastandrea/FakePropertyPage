@@ -18,6 +18,8 @@ $textFont: 'Montserrat', sans-serif;
         display: flex;
         justify-content: space-around;
         width: 100%;
+        z-index: 10;
+        position: fixed;
         
 
         .navUl{
